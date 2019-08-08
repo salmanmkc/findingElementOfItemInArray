@@ -19,6 +19,13 @@ namespace findingElementOfItemInArray
             {
                 numbers[i] = rnd.Next(1, 100);
             }
+
+            Console.WriteLine("Your radomly generated array: ");
+            foreach(int i in numbers)
+            {
+                Console.Write(i + " ");
+            }
+            Console.WriteLine();
             int chosen = rnd.Next(0, j - 1);
             Console.WriteLine($"{chosen} index has value {numbers[chosen]}");
 
@@ -27,9 +34,9 @@ namespace findingElementOfItemInArray
             foreach (var c in finding)
             {
                 Console.Write(c);
-                Thread.Sleep(100);
+                Thread.Sleep(200);
             }
-
+            Console.WriteLine();
             Console.WriteLine($"{numbers[chosen]} has index of {Array.IndexOf(numbers, numbers[chosen])}");
             Console.ReadKey();
 
