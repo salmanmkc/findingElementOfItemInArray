@@ -15,7 +15,7 @@ namespace findingElementOfItemInArray
             Random rnd = new Random();
             int j = 10;
             int[] numbers = new int[j];
-            for(int i = 0; i < j; i++)
+            for (int i = 0; i < j; i++)
             {
                 numbers[i] = rnd.Next(1, 100);
             }
@@ -24,11 +24,15 @@ namespace findingElementOfItemInArray
 
             //doing this to just make it seem like it takes time to find the number
             string finding = "finding...";
-            foreach(var c in finding)
+            foreach (var c in finding)
             {
                 Console.Write(c);
                 Thread.Sleep(100);
             }
+
+            Console.WriteLine($"{numbers[chosen]} has index of {Array.IndexOf(numbers, numbers[chosen])}");
+            Console.ReadKey();
+
 
 
         }
