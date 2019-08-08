@@ -10,6 +10,7 @@ namespace findingElementOfItemInArray
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("This program will do the array stuff for you");
         }
     }
 }
