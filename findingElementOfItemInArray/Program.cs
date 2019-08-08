@@ -18,6 +18,7 @@ namespace findingElementOfItemInArray
             {
                 numbers[i] = rnd.Next(1, 100);
             }
+            int chosen = rnd.Next(0, j - 1);
 
 
         }
